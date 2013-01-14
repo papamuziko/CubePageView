@@ -19,6 +19,8 @@
 		C105B8F616A4715E00789EA1 /* CPV_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C105B8F516A4715E00789EA1 /* CPV_ViewController.m */; };
 		C105B8F916A4715E00789EA1 /* CPV_ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C105B8F716A4715E00789EA1 /* CPV_ViewController_iPhone.xib */; };
 		C105B8FC16A4715E00789EA1 /* CPV_ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C105B8FA16A4715E00789EA1 /* CPV_ViewController_iPad.xib */; };
+		C105B90616A4A7C200789EA1 /* CubePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C105B90516A4A7C200789EA1 /* CubePageView.m */; };
+		C105B90816A4A83A00789EA1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C105B90716A4A83A00789EA1 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		C105B8F516A4715E00789EA1 /* CPV_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPV_ViewController.m; sourceTree = "<group>"; };
 		C105B8F816A4715E00789EA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPV_ViewController_iPhone.xib; sourceTree = "<group>"; };
 		C105B8FB16A4715E00789EA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPV_ViewController_iPad.xib; sourceTree = "<group>"; };
+		C105B90416A4A7C200789EA1 /* CubePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubePageView.h; sourceTree = "<group>"; };
+		C105B90516A4A7C200789EA1 /* CubePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubePageView.m; sourceTree = "<group>"; };
+		C105B90716A4A83A00789EA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C105B90816A4A83A00789EA1 /* QuartzCore.framework in Frameworks */,
 				C105B8DD16A4715E00789EA1 /* UIKit.framework in Frameworks */,
 				C105B8DF16A4715E00789EA1 /* Foundation.framework in Frameworks */,
 				C105B8E116A4715E00789EA1 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		C105B8DB16A4715E00789EA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C105B90716A4A83A00789EA1 /* QuartzCore.framework */,
 				C105B8DC16A4715E00789EA1 /* UIKit.framework */,
 				C105B8DE16A4715E00789EA1 /* Foundation.framework */,
 				C105B8E016A4715E00789EA1 /* CoreGraphics.framework */,
@@ -85,6 +92,7 @@
 		C105B8E216A4715E00789EA1 /* CubePageView */ = {
 			isa = PBXGroup;
 			children = (
+				C105B90316A4A7C200789EA1 /* CubePageView */,
 				C105B8EB16A4715E00789EA1 /* CPV_AppDelegate.h */,
 				C105B8EC16A4715E00789EA1 /* CPV_AppDelegate.m */,
 				C105B8F416A4715E00789EA1 /* CPV_ViewController.h */,
@@ -108,6 +116,15 @@
 				C105B8F216A4715E00789EA1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C105B90316A4A7C200789EA1 /* CubePageView */ = {
+			isa = PBXGroup;
+			children = (
+				C105B90416A4A7C200789EA1 /* CubePageView.h */,
+				C105B90516A4A7C200789EA1 /* CubePageView.m */,
+			);
+			path = CubePageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +198,7 @@
 				C105B8E916A4715E00789EA1 /* main.m in Sources */,
 				C105B8ED16A4715E00789EA1 /* CPV_AppDelegate.m in Sources */,
 				C105B8F616A4715E00789EA1 /* CPV_ViewController.m in Sources */,
+				C105B90616A4A7C200789EA1 /* CubePageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

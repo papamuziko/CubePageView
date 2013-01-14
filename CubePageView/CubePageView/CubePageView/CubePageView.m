@@ -93,6 +93,10 @@ typedef enum _CubePageView_Direction {
 {
 	pc_width_page = 0.0;
 	
+    [self private_cleanCurrent];
+    [self private_cleanNext];
+    [self private_cleanPrev];
+    
 	if(pc_pages != nil){
 #if !ARC_ENABLED
 		[pc_pages release];
