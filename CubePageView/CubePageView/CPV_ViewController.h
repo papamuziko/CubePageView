@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPV_ViewController : UIViewController
+#import "CubePageView.h"
+
+@interface CPV_ViewController : UIViewController <CubePageView_Delegate>
+
+@property (nonatomic, strong) CubePageView *pages;
+
+@property (nonatomic, strong) IBOutlet UILabel *nb_pages;
+
+- (IBAction)numberPagesChange:(id)sender;
 
 @end
