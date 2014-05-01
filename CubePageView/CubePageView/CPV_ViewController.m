@@ -49,10 +49,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
    
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
-        self.pages = [[CubePageView alloc] initWithFrame:CGRectMake(60.0, 150.0, 648.0, 830.0)];
+        self.pages = [[CubePageView alloc] initWithFrame:CGRectMake(60.0, 170.0, 648.0, 830.0)];
     }
     else{
-        self.pages = [[CubePageView alloc] initWithFrame:CGRectMake(10.0, 90.0, 300.0, 350.0)];
+        self.pages = [[CubePageView alloc] initWithFrame:CGRectMake(10.0, 110.0, 300.0, 350.0)];
     }
     self.pages.backgroundColor = [UIColor clearColor];
     self.pages.delegate = self;
